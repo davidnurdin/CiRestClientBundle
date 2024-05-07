@@ -27,11 +27,5 @@
     "psr-0" : {
       "Circle\\RestClientBundle" : ""
     }
-  },
-  "target-dir" : "Circle/RestClientBundle",
-  "extra" : {
-    "branch-alias" : {
-      "dev-master" : "1.0-dev"
-    }
   }
 }
