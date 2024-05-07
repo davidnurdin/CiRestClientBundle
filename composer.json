@@ -3,8 +3,6 @@
   "description" : "Provides REST request methods. Mapper bundle for php internal curl library",
   "type" : "symfony-bundle",
   "version": "3.0.0",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "authors" : [{
     "name" : "Circle.ai",
     "email" : "info@circle.ai"
@@ -26,6 +24,11 @@
   "autoload" : {
     "psr-0" : {
       "Circle\\RestClientBundle" : ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.0-dev"
     }
   }
 }
