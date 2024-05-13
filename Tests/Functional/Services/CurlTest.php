@@ -49,7 +49,7 @@ class CurlTest extends \PHPUnit_Framework_TestCase {
     /**
      * {@inheritDoc}
      */
-    public function setUp() {
+    public function setUp() : void {
         $this->curl                 = new Curl(new CurlOptionsHandler(array()));
         $this->mockControllerUrl    = $this->getMockControllerUrl();
     }

@@ -45,7 +45,7 @@ class CurlOptionsHandlerTest extends \PHPUnit_Framework_TestCase {
     /**
      * {@inheritDoc}
      */
-    public function setUp() {
+    public function setUp() : void {
         $this->curlOptionsHandler = new CurlOptionsHandler($this->defaultOptions);
     }
 

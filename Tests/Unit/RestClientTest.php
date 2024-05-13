@@ -51,7 +51,7 @@ class RestClientTest extends \PHPUnit_Framework_TestCase {
     /**
      * {@inheritDoc}
      */
-    public function setUp() {
+    public function setUp() : void {
         $this->curl                 = $this->getMockBuilder('Circle\RestClientBundle\Services\Curl')->disableOriginalConstructor()->getMock();
         $this->restClient           = new RestClient($this->curl);
         $this->mockControllerUrl    = 'http://someUrl.com';
