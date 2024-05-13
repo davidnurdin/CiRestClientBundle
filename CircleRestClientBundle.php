@@ -18,6 +18,11 @@
 
 namespace Circle\RestClientBundle;
 
+use Symfony\Bundle\MakerBundle\DependencyInjection\CompilerPass\MakeCommandRegistrationPass;
+use Symfony\Bundle\MakerBundle\DependencyInjection\CompilerPass\RemoveMissingParametersPass;
+use Symfony\Bundle\MakerBundle\DependencyInjection\CompilerPass\SetDoctrineAnnotatedPrefixesPass;
+use Symfony\Component\DependencyInjection\Compiler\PassConfig;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
@@ -28,4 +33,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class CircleRestClientBundle extends Bundle
 {
+//    public function build(ContainerBuilder $container): void
+//    {
+//        dd('ok');
+//    }
 }
